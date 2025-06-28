@@ -1,0 +1,388 @@
+/* Navbar styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #383638;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.navbar {
+    background-color: #262323;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    border-bottom: 1px solid #fff;
+}
+
+/* Hide elements before animations start */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-fluid {
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow-x: hidden !important;
+}
+
+.navbar-brand:hover {
+    color: #ddd;
+}
+
+.navbar-toggler-icon {
+    fill: white !important;
+    color: white !important;
+    stroke: white !important;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 16px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="white"%3E%3Cpath stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    ;
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('assets/background.svg');
+    /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+    overflow: hidden !important;
+}
+
+.content {
+    margin-top: 0px !important;
+    overflow: hidden !important;
+}
+
+.content h1 {
+    font-size: 58px;
+    line-height: 75px;
+    font-weight: bold;
+}
+
+.content p {
+    color: #FFF;
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 15px */
+}
+
+.image-container-fluid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.projects-section {
+    overflow: hidden !important;
+}
+
+.projects-section h1 {
+    font-size: 52px;
+    font-style: normal;
+    background: linear-gradient(90deg, #FFF 0%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.project-content {
+    text-align: left;
+}
+
+.heading-wrapper {
+    margin-bottom: 20px;
+    background-color: #1F1F1F;
+    padding: 14px 15px;
+    width: fit-content;
+}
+
+.project-content h2 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    background: conic-gradient(from 90deg at 54.68% 50.75%, #999 88.81130397319794deg, #FFF 276.2345480918884deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* 67.2px */
+    letter-spacing: 0.24px;
+}
+
+.project-content p {
+    color: #FFF;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+}
+
+.start-button {
+    margin-top: 8px;
+    display: inline-block;
+    border-radius: 9px;
+    border: 1px solid #ABABAB;
+    padding: 3px 18px;
+    background: #9C9C9C;
+    color: #FFF;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.start-button:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.project {
+    overflow: hidden !important;
+}
+
+.banner {
+    overflow: hidden !important;
+    background-image: url('assets/banner.svg');
+    height: 100%;
+    /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.banner .bannerimg {
+    width: 100%;  /* Ensure it takes full width */
+    height: 400px; /* Fixed height for cropping */
+    object-fit: cover; /* Crop the image while maintaining aspect ratio */
+}
+
+
+.steps-section {
+    background-image: url('assets/stepsbg.svg');
+    /* Replace with your background image URL */
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    overflow: hidden !important;
+    opacity: 0.9;
+    padding: 50px 20px 0px 20px;
+}
+
+.steps-section h1 {
+    text-align: start;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    overflow: hidden !important;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    overflow: hidden !important;
+    gap: 10px;
+}
+
+.step img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 35px */
+    letter-spacing: 0.125px;
+    margin-bottom: 15px;
+}
+
+.step p {
+    color: #FFF;
+    text-align: start;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.floating-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.faqs-section .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #5B5B5B;
+    color: black !important;
+}
+
+.footer-text {
+    margin-top: 50px;
+    background-color: #5B5B5B;
+    padding: 24px;
+    color: white;
+    text-align: center;
+}
+
+.card-body {
+    background-color: #282828;
+    color: white !important;
+}
+
+.faqs-section h1 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 2.5rem;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+}
+
+@media (max-width: 1068px) {
+    .first-col,
+    .first-col3,
+    .first-col6
+    {
+        order: 1;
+    }
+    .second-col7{
+        order: 1;
+    }
+    .first-col8{
+        order: 2;
+    }
+    .projects-section h1{
+        margin-bottom: 85px !important;
+    }
+    .container-fluid {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    .bannerimgs{order: 2 !important;}
+    .image-container-fluid {
+        text-align: center !important;
+    }
+
+    .content {
+        position: static;
+        text-align: start;
+        transform: none;
+        margin-bottom: 0px;
+    }
+
+    .image-container {
+        position: static;
+        transform: none;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: bold;
+    }
+
+    .content p {
+        font-size: 1rem;
+        width: 100% !important;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .margin {
+        margin-top: 040px !important;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .projects-section h1 {
+        font-size: 38px;
+    }
+
+    .project-content {
+        text-align: flex-start;
+    }
+
+    .project-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 484px) {
+    .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .navbar-brand img {
+        width: 170px !important;
+    }
+
+    .banner img {
+        margin-top: 1 !important;
+    }
+}
